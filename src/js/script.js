@@ -4,7 +4,6 @@ document.getElementById('orcamentoForm').addEventListener('submit', function (e)
     const dados = {
         titulo: encodeURIComponent("📊 NOVO ORÇAMENTO DE ENERGIA SOLAR"),
         nome: encodeURIComponent(document.getElementById('nome').value),
-        email: encodeURIComponent(document.getElementById('email').value),
         cidade: encodeURIComponent(document.getElementById('cidade').value),
         info: encodeURIComponent(document.getElementById('informacoes').value)
     };
