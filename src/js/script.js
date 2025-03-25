@@ -13,7 +13,6 @@ document.getElementById('orcamentoForm').addEventListener('submit', function (e)
         `&text=` +
         `*${dados.titulo}*%0A%0A` +
         `*▪ Nome:* ${dados.nome}%0A` +
-        `*▪ E-mail:* ${dados.email}%0A` +
         `*▪ Cidade:* ${dados.cidade}%0A` +
         `*▪ Informações:* ${dados.info}%0A%0A` +
         encodeURIComponent("📎 Anexe sua conta de luz");
