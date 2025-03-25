@@ -32,8 +32,8 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1>Economize até 95% na sua conta de luz!</h1>
-            <p>Com a energia solar, você pode economizar até 95% na sua conta de luz. O valor exato pode variar conforme
+            <h1>Economize até 80% na sua conta de luz!</h1>
+            <p>Com a energia solar, você pode economizar até 80% na sua conta de luz. O valor exato pode variar conforme
                 seu consumo de energia, mas, de modo geral, esse é um investimento inteligente que garante um retorno
                 rápido e sustentável.</p>
             <a href="https://wa.me/5516981790555" class="btn btn-lg cta-button mt-3">Entrar em Contato via WhatsApp</a>
@@ -47,7 +47,7 @@
                 <h2>Sobre a Solar Borges</h2>
                 <p>Na Solar Borges, somos especialistas em energia solar com um único objetivo: ajudar você a reduzir
                     significativamente os custos com energia elétrica. Oferecemos soluções personalizadas e de alta
-                    eficiência que permitem à sua residência ou empresa economizar até 95% na conta de luz.
+                    eficiência que permitem à sua residência ou empresa economizar até 80% na conta de luz.
                     Nosso compromisso vai além de fornecer energia limpa e renovável. Acreditamos em uma abordagem
                     transparente e sem surpresas, garantindo que você entenda cada etapa do processo, desde o
                     planejamento até a instalação. Com a Solar Borges, você faz um investimento inteligente que se paga
@@ -63,7 +63,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <h4>Economia Real</h4>
-                        <p>Com a energia solar, você pode economizar até 95% na sua conta de luz, garantindo um retorno
+                        <p>Com a energia solar, você pode economizar até 80% na sua conta de luz, garantindo um retorno
                             rápido e sustentável.</p>
                     </div>
                     <div class="col-md-3">
@@ -111,6 +111,53 @@
                     economizar com energia solar de maneira simples e acessível!</p>
             </div>
         </section>
+
+        <section id="calculadora" class="py-5 text-center bg-light">
+            <div class="container">
+                <h2 class="mb-3">Calculadora de Estimativa Solar</h2>
+                <p><strong>Atenção!</strong> Para garantir o melhor desempenho do seu sistema solar, esta simulação
+                    inclui uma margem adicional de kWh, considerando dias com menor incidência solar. Lembre-se de que
+                    os valores podem variar para mais ou para menos de acordo com as condições reais.</p>
+
+
+                <div class="calculator mx-auto" style="max-width: 600px;">
+                    <div class="card p-4">
+                        <div class="mb-4">
+                            <!-- Melhorando o campo com um design mais limpo e agradável -->
+                            <label for="conta" class="form-label">Valor mensal da conta de energia (R$):</label>
+                            <div class="input-group">
+                                <!-- Adicionando o símbolo R$ no campo de entrada -->
+                                <span class="input-group-text">R$</span>
+                                <input type="number" id="conta" class="form-control" step="0.01"
+                                    placeholder="Ex: 300.00" aria-label="Conta de energia"
+                                    aria-describedby="basic-addon1" required
+                                    style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); font-size: 1.2rem; padding: 0.75rem 1rem;">
+                            </div>
+                        </div>
+
+                        <button onclick="calcular()" class="btn btn-primary w-100"
+                            style="border-radius: 10px; padding: 0.75rem; font-size: 1.2rem;">
+                            Calcular
+                        </button>
+
+                        <!-- Resultados da simulação, inicialmente ocultos -->
+                        <div class="result mt-4" id="resultado" style="display: none;">
+                            <h4 class="mb-3">Resultado da Simulação:</h4>
+                            <div class="text-start">
+                                <p>Economia anual estimada: <strong><span id="economia"></span></strong></p>
+                                <p>Retorno estimado do valor investido: <strong><span id="payback"></span></strong></p>
+                                <p>Área necessária: <strong><span id="area"></span></strong></p>
+                                <p>Potência do kit: <strong><span id="potencia"></span></strong></p>
+                                <p>Quantidade de módulos: <strong><span id="modulos"></span></strong></p>
+                                <p>Produção Mensal Estimada: <strong><span id="producao"></span></strong></p>
+                                <p>Valor Estimado do Sistema: <strong><span id="valor"></span></strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="instagram" class="py-5 text-center">
             <div class="container">
